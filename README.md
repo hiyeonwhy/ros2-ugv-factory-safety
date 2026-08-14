@@ -328,15 +328,5 @@ ros2 pkg list | grep factory_ugv
 
 </details>
 
----
-
-## 🗺️ 향후 개선 방향
-
-* [ ] YOLO 모델 경량화 및 Jetson 최적화
-* [ ] IMU calibration 자동화
-* [ ] `/odom/filtered` 기반 Navigation 완전 적용
-* [ ] 관리자 알림 시스템 고도화 및 Web dashboard 연동
-* [ ] SLAM/Localization RMSE 자동 계산 스크립트
-* [ ] udev rule을 이용한 USB 장치 포트 고정
 
 ---
