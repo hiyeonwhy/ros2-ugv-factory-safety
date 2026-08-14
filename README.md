@@ -340,24 +340,3 @@ ros2 pkg list | grep factory_ugv
 * [ ] udev rule을 이용한 USB 장치 포트 고정
 
 ---
-
-## 🤝 기여 방법
-
-기여는 언제나 환영합니다.
-
-1. 이 저장소를 **Fork** 합니다.
-2. 기능 브랜치를 생성합니다. (`git checkout -b feature/amazing-feature`)
-3. 변경 사항을 커밋합니다. (`git commit -m 'Add amazing feature'`)
-4. 브랜치에 푸시합니다. (`git push origin feature/amazing-feature`)
-5. **Pull Request**를 열어 주세요.
-
-버그 제보나 기능 제안은 [Issues](../../issues)에 남겨 주세요.
-
----
-
-## 📄 라이선스
-
-이 프로젝트의 라이선스는 아직 지정되지 않았습니다. (`package.xml`의 `<license>` 항목 참조)
-
-> `sdk/` 디렉터리는 **Slamtec LIDAR SDK** 원본으로, Shanghai Slamtec Co., Ltd.의 **BSD 2-Clause** 라이선스를 따릅니다.
-> `launch/4.navigation_launch.py`는 Nav2 프로젝트(Intel Corporation, Samsung Research)의 **Apache License 2.0** 코드를 기반으로 합니다.
