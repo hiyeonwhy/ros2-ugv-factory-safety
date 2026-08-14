@@ -57,7 +57,7 @@ def generate_launch_description():
 
 
         Node(
-            package='wens_ugv',
+            package='factory_ugv',
             executable='sllidar_node',
             name='sllidar_node',
             parameters=[{'channel_type':channel_type,

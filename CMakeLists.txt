@@ -2,9 +2,9 @@
 # Set minimum required version of cmake, project name and compile options
 ################################################################################
 cmake_minimum_required(VERSION 3.16) 
-project(wens_ugv LANGUAGES CXX C)
+project(factory_ugv LANGUAGES CXX C)
 
-# Default to C99 for C files (from wens_ugv)
+# Default to C99 for C files (from factory_ugv)
 if(NOT CMAKE_C_STANDARD)
   set(CMAKE_C_STANDARD 99)
 endif()

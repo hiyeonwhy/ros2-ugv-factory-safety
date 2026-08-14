@@ -67,9 +67,10 @@ class SLlidarNode : public rclcpp::Node
     void init_param()
     {
         this->declare_parameter<std::string>("channel_type","serial");
-        this->declare_parameter<std::string>("tcp_ip", "192.168.0.7");
+        // tcp_ip / udp_ip 는 기본값 없음. 이더넷 모델 사용 시 launch 인자나 파라미터로 지정할 것
+        this->declare_parameter<std::string>("tcp_ip", "");
         this->declare_parameter<int>("tcp_port", 20108);
-        this->declare_parameter<std::string>("udp_ip","192.168.11.2");
+        this->declare_parameter<std::string>("udp_ip","");
         this->declare_parameter<int>("udp_port",8089);
         this->declare_parameter<std::string>("serial_port", "/dev/ttyUSB0");
         this->declare_parameter<int>("serial_baudrate",1000000);
@@ -80,9 +81,9 @@ class SLlidarNode : public rclcpp::Node
         this->declare_parameter<float>("scan_frequency",10);
         
         this->get_parameter_or<std::string>("channel_type", channel_type, "serial");
-        this->get_parameter_or<std::string>("tcp_ip", tcp_ip, "192.168.0.7"); 
+        this->get_parameter_or<std::string>("tcp_ip", tcp_ip, std::string());
         this->get_parameter_or<int>("tcp_port", tcp_port, 20108);
-        this->get_parameter_or<std::string>("udp_ip", udp_ip, "192.168.11.2"); 
+        this->get_parameter_or<std::string>("udp_ip", udp_ip, std::string());
         this->get_parameter_or<int>("udp_port", udp_port, 8089);
         this->get_parameter_or<std::string>("serial_port", serial_port, "/dev/ttyUSB0"); 
         this->get_parameter_or<int>("serial_baudrate", serial_baudrate, 1000000/*256000*/);//ros run for A1 A2, change to 256000 if A3

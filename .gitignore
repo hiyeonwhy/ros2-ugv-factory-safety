@@ -1,0 +1,13 @@
+# ROS2 build artifacts
+build/
+install/
+log/
+
+
+# Python
+__pycache__/
+*.pyc
+
+# ROS2 bag
+*.db3
+*.mcap

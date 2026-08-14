@@ -20,7 +20,9 @@ slam_toolbox:
     # if you'd like to immediately start continuing a map at a given pose
     # or at the dock, but they are mutually exclusive, if pose is given
     # will use pose
-    map_file_name: /home/wens/dev_ws/src/wens_ugv/map/test_1021
+    # 사용 환경에 맞는 절대 경로로 수정해서 사용
+    # 예: /home/<user>/<ros2_ws>/src/factory_ugv/map/test_1021
+    map_file_name: ""
     # map_start_pose: [0.0, 0.0, 0.0]
     map_start_at_dock: true
 

@@ -14,10 +14,10 @@ import xacro
 
 def generate_launch_description():
 
-    package_name = 'wens_ugv'
+    package_name = 'factory_ugv'
 
     # Process the URDF file
-    xacro_file = os.path.join(get_package_share_directory(package_name), 'description', 'wens-ugv.urdf.xacro')
+    xacro_file = os.path.join(get_package_share_directory(package_name), 'description', 'factory-ugv.urdf.xacro')
     robot_description_config = Command(['xacro ', str(xacro_file), ' ', 'use_ros2_control:=true', ' ', 'sim_mode:=false'])
 
     # Create a robot_state_publisher node

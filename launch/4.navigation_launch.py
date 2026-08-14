@@ -28,7 +28,7 @@ from nav2_common.launch import RewrittenYaml
 
 def generate_launch_description():
     # Get the launch directory
-    bringup_dir = get_package_share_directory('wens_ugv')
+    bringup_dir = get_package_share_directory('factory_ugv')
 
     namespace = LaunchConfiguration('namespace')
     use_sim_time = LaunchConfiguration('use_sim_time')
