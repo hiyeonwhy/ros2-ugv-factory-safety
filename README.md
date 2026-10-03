@@ -71,7 +71,7 @@ USB 카메라 영상을 입력으로 YOLOv11 Pose 모델이 작업자의 자세�
 ### 사전 요구 사항
 
 * **Ubuntu 22.04 LTS**
-* **ROS2 Humble** ([설치 가이드](https://docs.ros.org/en/humble/Installation.html))
+* **ROS2 Humble**
 * colcon 빌드 도구
 
 ### 1. 의존 패키지 설치
